@@ -38,8 +38,8 @@
 
     <Button
         android:id="@+id/authentificateButton"
-        android:layout_width="196dp"
-        android:layout_height="45dp"
+        android:layout_width="197dp"
+        android:layout_height="41dp"
         android:layout_marginStart="107dp"
         android:layout_marginLeft="107dp"
         android:layout_marginTop="60dp"

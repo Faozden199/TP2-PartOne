@@ -2,6 +2,6 @@
     <string name="app_name">TP2</string>
     <string name="inputName">name</string>
     <string name="inputPass">password</string>
-    <string name="authentificate">AUTHENTIFICATE</string>
+    <string name="authentificate">AUTHENTICATE</string>
     <string name="credentials">My result here</string>
 </resources>

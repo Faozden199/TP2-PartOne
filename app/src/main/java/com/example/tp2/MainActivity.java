@@ -30,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //AUTHENTIFICATE BUTTON TRIGGER
+    //AUTHENTICATE BUTTON TRIGGER
     public void send(View view) {
         EditText inputName = (EditText) findViewById(R.id.inputName);
         EditText inputPass = (EditText) findViewById(R.id.inputPass);
 
-        //Launch new thread on our authentification service
+        //Launch new thread on our authentication service
         Thread thread = new Thread(new Runnable() {
             @Override
             public void run() {
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         InputStream in = new BufferedInputStream(urlConnection.getInputStream());
                         JSONObject s = readStream(in);
-                        credential = "Authentificated : " + s.getString("authenticated") + " ; " + "User : " + s.getString("user");
+                        credential = "Authenticated : " + s.getString("authenticated") + " ; " + "User : " + s.getString("user");
                         Log.i("JFL", credential);
                     } catch (JSONException e) {
                         e.printStackTrace();
